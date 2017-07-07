@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feet To Yards</title>
+<style>
+h2 {color: teal; backround-color: aquamarine;}
+#feet {color:blue; background-color: green;}
+#Inches {color:silver; background-color: gold;}
+</style>
+</head>
+<body>
+<a href="EASY Calculator.html">2nd Page</a>
+<h2>Length Converter Calculator</h2>
+	<label>Feet</label>
+	<input id="Yards" type="number" placeholder="Yards" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.vaule)">
+	<br>
+<p>Feet: <span id="Feet"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+	document.getElementById("Feet").innerHTML=valNum*3;
+}
+</script>
+</body>
+</html>

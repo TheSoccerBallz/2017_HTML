@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+
+</style>
+<script>
+	function myfunction(){
+    	var form = document.getElementById("calForm");
+		var numOne = parseInt(form.elements[0].value);
+		var op = form.elements[1].value;
+		var numTwo = parseInt(form.elements[2].value);
+		if(op == "add"){
+			answer = numOne + numTwo;
+		} else if(op == "subtract"){
+			answer = numOne - numTwo;
+		} else if(op == "multipy"){
+			answer = numOne*numTwo;
+		} else if (op == "divide"){
+			answer = numOne/numTwo;
+		}
+		document.getElementById("output").innerHTML=answer;
+	}
+	</script>
+					</head>
+<body>
+<a href="SPECIAL Calculator.html">2nd Page</a>
+<form id = "calForm">
+	<input type = "text">
+	<select>
+	<option value = "add">+</option>
+	<option value = "subtract">-</option>
+	<option value = "multipy">*</option>
+	<option value = "divide">/</option>
+	</select>
+    <input type = "text">
+	</form>
+	<p id = "output"> = </p>
+	<button onclick = "myfunction()">=</button>
+
+</body>
+</html>

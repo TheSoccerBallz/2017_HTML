@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title>Page Title</title> 
+		<style>
+			h1 {color:black;font-size:700x; backround-color:blue;}
+			p {color:teal;font-size: 69px; background-color:gold;}
+		</style>
+        
+<h1>Soraya is Awesome</h1>
+<p>You know Soraya is the best!</p>
+<p class="y"> Soccer is the best sport.</p>
+<p class="y"> The cow jumped over the moon
+<p class="y"> Soraya is cool,amazing, and awesome.
+</body>
+</html>

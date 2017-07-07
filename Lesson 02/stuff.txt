@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Website</title>
+        <style>
+        	body {background-color: blue;}
+            h1, h2, p {color:purple; font-size:13px; text-align:center; background-color: rgb(117, 255, 213);}
+            #y {color:yellow;}
+            .y {color:green;}
+            .x {text-align: right;}
+            .z {background-color: red;}
+            p.y {font-size: 25px;}
+        </style>
+        <script>
+        	function functionReset(){
+document.getElementById("form1").reset();
+		}
+        function getValues(){
+        	var form = document.getElementById("form1");
+            var text = "";
+            if (form.elements[0].value || form.elements[1].value){
+            for (var i = 0; i < form.length - 1; i++){
+            	text += form.elements[i].value + " ";
+                   } 
+                } else {
+                	text += "Please enter something!";
+                    }
+                document.getElementById("y").innerHTML = text;
+         }
+        </script>
+    </head>
+    
+    <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+	<a href="HelloWorld2.html">2nd Page</a>
+    <p style="color:blue">The quick brown fox jumps over the lazy dog</p>
+    <p id="y">The quick brown fox jumps over the lazy dog</p>
+    <p class="y">The quick brown fox jumps over the lazy dog</p>
+    <p class="x">The quick brown fox jumps over the lazy dog</p>
+    <form id = "form1">
+    	First Name: <input type = "text" name = "fname">
+  <br>     
+        Last Name: <input type = "text" name = "lname">
+  <br>
+  
+  		<input type = "button" onclick =
+"functionReset()" value = "Reset">
+	</form>
+    <button onclick = "getValues()"> = </button>
+    </body>
+</html>
